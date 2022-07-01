@@ -1,0 +1,20 @@
+services:
+  daligo-mysql:
+    platform: linux/x86_64
+    image: mysql
+    container_name: daligo-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+    volumes:
+      - ./config/:/docker-entrypoint-initdb.d/
+    ports:
+      - 3307:3306
+
+  daligo-redis:
+    image: redis
+    container_name: daligo-redis
+    labels:
+      - "name=redis"
+      - "mode=standalone"
+    ports:
+      - 6379:6379
