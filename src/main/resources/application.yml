@@ -1,0 +1,29 @@
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      format_sql: true
+      ddl-auto: create
+
+  datasource:
+    driver-class-name: org.h2.Driver  #h2 드라이버 설정
+    url: jdbc:h2:tcp://localhost/~/test  #접속 URL
+    username: sa  # 사용자 이름 (로그인 시 사용)
+    password:   # 사용자 암호 (로그인 시 사용)
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: dnjsalsgh123@gmail.com
+    password:
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+            required: true
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
