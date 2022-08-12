@@ -1,14 +1,11 @@
 package com.daligo.domain.article.entity;
 
 import com.daligo.domain.board.entity.BoardEntity;
-import com.daligo.domain.user.entity.UserEntity;
+import com.daligo.domain.user.entity.entity.UserEntity;
 import com.daligo.global.entity.BaseTimeEntity;
 import lombok.*;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity

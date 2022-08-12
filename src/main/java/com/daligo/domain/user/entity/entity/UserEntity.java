@@ -1,12 +1,10 @@
-package com.daligo.domain.user.entity;
+package com.daligo.domain.user.entity.entity;
 
 import com.daligo.global.entity.BaseTimeEntity;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
@@ -18,16 +16,27 @@ import java.util.Objects;
 public class UserEntity extends BaseTimeEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
+    @Schema(description = "고유번호", example = "b333cf1257c5")
     private Long userId;
+
     @Column
+    @Schema(description = "이름", example = "홍길동")
     private String name;
+
     @Column
+    @Schema(description = "전화번호", example = "010-1111-1111")
     private String phone;
+
     @Column
+    @Schema(description = "나이", example = "25")
     private int age;
+
     @Column
+    @Schema(description = "지역", example = "부산")
     private String location;
+
     @Column
+    @Schema(description = "이메일", example = "example@example.com")
     private String email;
 
     @Override
