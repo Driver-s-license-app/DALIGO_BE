@@ -1,7 +1,7 @@
 package com.daligo.domain.comment.entity;
 
 import com.daligo.domain.article.entity.ArticleEntity;
-import com.daligo.domain.user.entity.UserEntity;
+import com.daligo.domain.user.entity.entity.UserEntity;
 import lombok.*;
 
 import javax.persistence.*;
