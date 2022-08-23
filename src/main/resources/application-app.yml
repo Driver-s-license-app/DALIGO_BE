@@ -1,0 +1,7 @@
+app:
+  auth:
+    token-secret: zg5u/ODwWmovHX/P7MFqtKCh4gmT7BO4hKXYyBMgRx6ujXpv5Uba9w8nBWlQRbwkxdz1DGjwIRqsrnRzFnbEyg==
+    token-expiration-time: 1209600000
+  oauth2:
+    authorized-redirect-uris:
+      - http://localhost:8080/auth/token
